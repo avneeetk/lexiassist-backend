@@ -31,7 +31,7 @@ app.add_middleware(
 app.include_router(auth_router, prefix="/auth", tags=["Auth"])
 app.include_router(students_router, prefix="/students", tags=["Students"])
 app.include_router(tests_router, prefix="/tests", tags=["Tests"])
-app.include_router(storybook_router, prefix="/api/storybook", tags=["Storybook"])
+app.include_router(storybook_router)
 app.include_router(worddetective_router)
 
 
