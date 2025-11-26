@@ -1,0 +1,23 @@
+fastapi
+uvicorn
+gunicorn
+
+pydantic
+python-dotenv
+
+pymongo[srv]
+dnspython
+
+passlib
+bcrypt
+
+PyJWT
+
+google-generativeai
+groq
+
+python-multipart
+httpx
+requests
+
+cors  # safe fallback, FastAPI CORS uses fastapi.middleware.cors
