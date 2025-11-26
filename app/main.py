@@ -22,7 +22,7 @@ app = FastAPI(title="LexiAssist Backend", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=FRONTEND_ORIGINS,
+    allow_origins=FRONTEND_ORIGINS + ["http://localhost:5000", "http://192.168.1.2:5000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
