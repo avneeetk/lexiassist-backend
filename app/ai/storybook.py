@@ -6,8 +6,7 @@ import os
 import asyncio
 from typing import Optional
 
-router = APIRouter(tags=["storybook"])
-
+router = APIRouter(prefix="/api/storybook", tags=["storybook"])
 # In-memory cache for generated rounds (session -> rounds)
 rounds_cache = {}
 
