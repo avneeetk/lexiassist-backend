@@ -21,3 +21,5 @@ httpx
 requests
 
 cors  # safe fallback, FastAPI CORS uses fastapi.middleware.cors
+
+email-validator
