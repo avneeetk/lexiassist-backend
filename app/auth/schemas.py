@@ -28,6 +28,7 @@ class RegistrationData(BaseModel):
     additionalInfo: Optional[str] = None
 
     consentAnalysis: bool
+    password: str
 
     @validator("consentAnalysis")
     def consent_must_be_true(cls, v):
