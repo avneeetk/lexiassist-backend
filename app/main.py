@@ -16,7 +16,7 @@ from app.ai import storybook as storybook_module
 from app.ai.worddetective import router as worddetective_router
 
 load_dotenv()
-FRONTEND_ORIGINS = os.getenv("FRONTEND_ORIGINS", "http://localhost:5173").split(",")
+FRONTEND_ORIGINS = os.getenv("FRONTEND_ORIGINS", "http://localhost:5173", "http://localhost:5001").split(",")
 
 app = FastAPI(title="LexiAssist Backend", version="1.0.0")
 
