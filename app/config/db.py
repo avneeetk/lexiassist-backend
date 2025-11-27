@@ -7,7 +7,7 @@ load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
-db = client["lexiassist-b"]
+db = client["lexiassist"]
 
 # Collections
 parents_col = db["parents"]
